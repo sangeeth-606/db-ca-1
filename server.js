@@ -6,7 +6,7 @@ const app = express()
 const PORT = 8080;
 
 app.use(express.json())
-connectDB
+connectDB();
 
 app.listen(PORT , ()=>{
     console.log(`server is running on port ${PORT}`)
